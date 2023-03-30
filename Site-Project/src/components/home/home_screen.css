@@ -1,0 +1,200 @@
+.Section_HomeScreen {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.Container_HomeScreen {
+    width: 90%;
+    margin-block: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 15px;
+}
+
+.dawdawd {
+    width: 400px;
+    height: 300px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+
+.Row_Content {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.image_HomeScreen {
+    margin-inline: 50px;
+    width: 30%;
+    height: 450px;
+}
+
+.details_HomeScreen {
+    margin-inline: 50px;
+    width: 30%;
+    text-overflow: clip;
+}
+
+.title_carousel {
+    color: black;
+}
+
+.carousel_custom {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+.row_div_home {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 210px;
+}
+
+.text_homeScreen {
+    width: 40%;
+    height: fit-content;
+    text-align: center;
+    text-overflow: clip;
+    color: white;
+}
+
+.circle_div_home_screen {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: transparent;
+    position: relative;
+    animation: circle infinite;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+}
+
+.img_html {
+    width: 100px;
+    object-fit: contain;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    animation: circle_img1 infinite;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+}
+
+.img_css {
+    width: 80px;
+    object-fit: contain;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    animation: circle_img1 infinite;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+}
+
+.img_linux {
+    width: 130px;
+    object-fit: contain;
+}
+
+.img_windows {
+    width: 270px;
+    object-fit: contain;
+}
+
+.img_js {
+    width: 180px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0px;
+    right: 45px;
+    animation: circle_img1 infinite;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+}
+
+.img_win {
+    transition: 300ms;
+    animation: systems infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes systems {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes circle_img1 {
+    0% {
+        transform: rotate(-0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .row_div_home {
+        width: 100%;
+        height: max-content;
+        overflow: hidden;
+        flex-direction: column;
+        padding-bottom: 20px;
+        margin-bottom: 100px;
+    }
+
+    .text_homeScreen {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .img_windows{
+        width: 200px;
+    }
+    .img_linux{
+        width: 110px;
+    }
+}

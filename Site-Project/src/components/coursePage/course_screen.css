@@ -1,0 +1,19 @@
+er {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+}
+
+.items {
+    margin: 0 auto;
+    width: 90%;
+    padding-block: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

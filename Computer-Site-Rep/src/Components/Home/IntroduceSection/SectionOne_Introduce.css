@@ -1,0 +1,362 @@
+.SectionOneContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem auto;
+}
+
+.labelOne-firstSection {
+    width: 90px;
+    height: 5px;
+    border-radius: 5px;
+    display: block;
+    margin: 12% 0 10% 0;
+    background-color: #2D35FF;
+}
+
+.SectionOneRightSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 50px;
+    position: relative;
+}
+
+.SectionOneLeftSide {
+    width: 50%;
+    height: 900px;
+    position: relative;
+    top: 8%;
+    display: flex;
+    flex-direction: row;
+}
+
+.SectionOneTitle {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.5em;
+    word-spacing: 4px;
+}
+
+.SectionOneInsideTitle {
+    color: #FFAC41;
+}
+
+.Typewriter {
+    color: #B5B1B1;
+    margin-top: 10%;
+    font-size: 1.2rem;
+}
+
+.SectionOneButton-rtl {
+    margin-top: 10%;
+    width: fit-content !important;
+    padding: 1.6rem 1rem 1.6rem 2rem !important;
+    border-radius: 10px !important;
+    background-color: #FF0032 !important;
+    color: #FFFBFB !important;
+    position: relative;
+}
+
+.SectionOneButton-ltr {
+    margin-top: 10%;
+    width: fit-content !important;
+    padding: 1.6rem 2rem 1.6rem 1rem !important;
+    border-radius: 10px !important;
+    background-color: #FF0032 !important;
+    color: #FFFBFB !important;
+    position: relative;
+}
+
+.SectionOneButtonIcon-ltr {
+    font-size: 15px;
+    position: absolute;
+    right: 6%;
+}
+
+.SectionOneButtonIcon-rtl {
+    font-size: 15px;
+    position: absolute;
+    left: 6%;
+}
+
+
+.SectionOneTemplateImage-rtl {
+    width: 7% !important;
+    position: absolute;
+    object-fit: contain;
+    opacity: 0.6;
+    top: 25%;
+    right: -7%;
+}
+
+.SectionOneTemplateImage-ltr {
+    width: 7% !important;
+    position: absolute;
+    object-fit: contain;
+    opacity: 0.6;
+    top: 32%;
+    left: -7%;
+}
+
+.SectionOneBanner {
+    height: 100vh;
+}
+
+.banner-img-ltr {
+    width: 77%;
+    position: absolute;
+    right: -16%;
+    object-fit: contain;
+    min-width: 586px;
+    animation-name: anim-ltr;
+    animation-duration: 2s;
+}
+
+.banner-img-rtl {
+    width: 77%;
+    position: absolute;
+    left: -16%;
+    object-fit: contain;
+    min-width: 586px;
+    animation-name: anim-rtl;
+    animation-duration: 2s;
+}
+
+.siteDetails-ltr {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    right: -25%;
+    animation-name: animationSiteDetails-rtl;
+    animation-duration: 2s;
+}
+
+.siteDetails-rtl {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    left: -25%;
+    animation-name: animationSiteDetails-ltr;
+    animation-duration: 2s;
+}
+
+.SectionOneBannerParent {
+    position: absolute;
+    width: 100%;
+
+}
+
+.The-first-hexagon-ltr {
+    width: 18%;
+    position: absolute;
+    top: 42%;
+    right: 50%;
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+    z-index: 99;
+}
+
+.The-first-hexagon-rtl {
+    width: 18%;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+    z-index: 99;
+}
+
+.The-second-hexagon-ltr {
+    position: absolute;
+    width: 11%;
+    top: 39%;
+    right: 60%;
+    -webkit-animation: first-spin 8s linear infinite;
+    -moz-animation: first-spin 8s linear infinite;
+    animation: first-spin 8s linear infinite;
+}
+
+.The-second-hexagon-rtl {
+    position: absolute;
+    width: 11%;
+    top: 39%;
+    left: 60%;
+    -webkit-animation: first-spin 8s linear infinite;
+    -moz-animation: first-spin 8s linear infinite;
+    animation: first-spin 8s linear infinite;
+}
+
+.The-third-hexagon {
+    position: absolute;
+    width: 4%;
+    top: 58%;
+    left: 30%;
+    -webkit-animation: second-spin 8s linear infinite;
+    -moz-animation: second-spin 8s linear infinite;
+    animation: second-spin 8s linear infinite;
+
+}
+
+.The-first-line-rtl {
+    position: absolute;
+    width: 15%;
+    height: 0.5rem;
+    top: 1%;
+    left: -10%;
+    border-radius: 0.5rem;
+    background-color: #FFAC41;
+}
+
+.The-first-line-ltr {
+    position: absolute;
+    width: 15%;
+    height: 0.5rem;
+    top: 1%;
+    right: -10%;
+    border-radius: 0.5rem;
+    background-color: #FFAC41;
+}
+
+/* up & down animation */
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* end up & down animation */
+
+/* SectionOneBanner animation */
+@keyframes anim-ltr {
+    0% {
+        transform: translateX(140px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes anim-rtl {
+    0% {
+        transform: translateX(-140px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* end SectionOneBanner animation */
+
+/* first spin */
+@-moz-keyframes first-spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes first-spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes first-spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* end first spin */
+
+/* second spin */
+@-moz-keyframes second-spin {
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes second-spin {
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes second-spin {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+/* end second spin */
+
+.SectionOneSiteDetails {
+    background-color: #4542d6;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2%;
+    width: 110%;
+    min-width: 330px;
+    height: 8rem;
+    position: absolute;
+    top: 53%;
+    z-index: 9;
+}
+
+.number {
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: white;
+}
+
+.plus {
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: #FFAC41;
+}
+
+.title {
+    font-size: 1.2em;
+    color: #dcdcdc;
+}
+
+@keyframes animationSiteDetails-rtl {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animationSiteDetails-ltr {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}

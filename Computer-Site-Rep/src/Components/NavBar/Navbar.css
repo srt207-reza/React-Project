@@ -1,0 +1,64 @@
+#nav-Header {
+    width: 100%;
+    padding-inline: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+}
+
+.navButton::before {
+    content: '';
+    width: 0;
+    height: 4px;
+    background-color: #FF4C29;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: 44px;
+    right: 50%;
+    transition: all 300ms ease-in-out;
+}
+
+.navButton:not(.navButton:focus):hover::before {
+    width: 100%;
+    right: 0;
+}
+
+.DropDownCustomNav {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    align-items: center;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+.DropDownItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+.DropDownCustomNav {
+    background-color: transparent !important;
+}
+
+.DropDownCustomNav:hover {
+    background-color: transparent !important;
+}
+
+.DropDownCustomNav:active {
+    background-color: transparent !important;
+}
+
+.DropDownCustomNav:focus {
+    background-color: transparent !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}

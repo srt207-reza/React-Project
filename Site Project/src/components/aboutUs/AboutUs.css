@@ -1,0 +1,36 @@
+.AboutUs_Container{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutUs_Box{
+    width: 90%;
+    background-color: white;
+    border-radius: 15px;
+    margin-block: 50px;
+    padding-block: 30px;
+    box-shadow: 27px 29px 20px -24px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 27px 29px 20px -24px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 27px 29px 20px -24px rgba(0, 0, 0, 0.35);
+}
+
+.aboutUs_title{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.aboutUs_detail{
+    margin-inline: 10%;
+    margin-block: 20px;
+}
+.custom_icon_aboutus{
+    font-size: 25px;
+    margin-inline:10px;
+    direction: rtl;
+}

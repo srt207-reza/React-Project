@@ -1,0 +1,38 @@
+.radius {
+    border-radius: 0px !important;
+    border: 0px !important;
+}
+
+.p-button {
+    font-family: Shabnam !important;
+    background-color: #596cff !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translateY(-2px);
+}
+
+.p-button:hover {
+    letter-spacing: 1px;
+    background-color: hsl(261deg 80% 48%) !important;
+    color: hsl(0, 0%, 100%) !important;
+    box-shadow: transparent 0px 7px 29px 0px !important;
+}
+
+.p-button:focus{
+    box-shadow: 0 0 0 0 #000 !important;
+    transform: translateY(0);
+}
+
+.p-button-icon {
+    position: relative;
+    top: 4px;
+}
+
+.p-button-label {
+    padding: 0 5px;
+}
+
+.btn_full{
+    width: 100% !important;
+}
